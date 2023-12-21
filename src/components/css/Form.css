@@ -1,0 +1,30 @@
+/* Sign up */
+.container {
+  width: 50dvw;
+  padding: 10px 50px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-weight: 500;
+  font-family: monospace;
+  font-size: 2.5rem;
+}
+
+.input-fields--heading {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.form_submit--button {
+  background-color: #52d3d8;
+}
