@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import BasicLayout from "../components/BasicLayout";
 import { useAuth } from "../hooks/useAuth";
 import { Button } from "antd";
+import { toast } from "react-toastify";
 
 const Home = () => {
   const { isLoggedIn, logout } = useAuth();
@@ -18,6 +19,7 @@ const Home = () => {
         <Button
           onClick={() => {
             logout();
+            toast.info("Logged out successfully", {});
             navigate("/");
           }}
         >
