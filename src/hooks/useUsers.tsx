@@ -27,7 +27,7 @@ const defaultUserContext: userContextType = {
     console.log("setting default users");
   },
   saveUser: (updatedUser: User) => {
-    console.log("saving users in local storage");
+    console.log("saving users in local storage", updatedUser);
   },
 };
 
