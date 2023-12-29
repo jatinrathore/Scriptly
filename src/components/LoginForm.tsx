@@ -107,7 +107,7 @@ const LoginForm = () => {
         </Title>
       </div>
       <Form onFinish={handleLogin}>
-        <div className="input-fields">
+        <div className="input-fields--box">
           <Flex vertical gap="15px">
             <Text className="input-fields--heading">
               Welcome to Scriptly! Login to your account.
@@ -121,10 +121,7 @@ const LoginForm = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              style={{
-                height: "45px",
-                fontSize: "16px",
-              }}
+              className="box__input"
             ></Input>
             {errors.email && <Text className="error-text">{errors.email}</Text>}
 
@@ -134,7 +131,7 @@ const LoginForm = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              style={{ height: "45px", fontSize: "16px" }}
+              className="box__input"
               iconRender={(visible) =>
                 visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
               }
@@ -153,6 +150,7 @@ const LoginForm = () => {
             size="large"
             className="form_submit--button"
             htmlType="submit"
+            style={{ width: "7rem" }}
           >
             Log in
           </Button>

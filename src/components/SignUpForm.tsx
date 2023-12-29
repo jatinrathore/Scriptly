@@ -114,7 +114,7 @@ const SignUpForm = ({ onSignUpSuccess }: Props) => {
         </Title>
       </div>
       <Form onFinish={handleSubmit}>
-        <div className="input-fields">
+        <div className="input-fields--box">
           <Flex vertical gap="15px">
             <Text className="input-fields--heading">
               Join Scriptly today! Sign up now to get started.
@@ -126,7 +126,7 @@ const SignUpForm = ({ onSignUpSuccess }: Props) => {
               onChange={handleChange}
               value={formData.name}
               name="name"
-              style={{ height: "45px", fontSize: "16px" }}
+              className="box__input"
             />
             {errors.name && <Text className="error-text">{errors.name}</Text>}
 
@@ -139,7 +139,7 @@ const SignUpForm = ({ onSignUpSuccess }: Props) => {
               onChange={handleChange}
               value={formData.email}
               name="email"
-              style={{ height: "45px", fontSize: "16px" }}
+              className="box__input"
             />
             {errors.email && <Text className="error-text">{errors.email}</Text>}
 
@@ -149,7 +149,7 @@ const SignUpForm = ({ onSignUpSuccess }: Props) => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              style={{ height: "45px", fontSize: "16px" }}
+              className="box__input"
               iconRender={(visible) =>
                 visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
               }
@@ -168,6 +168,7 @@ const SignUpForm = ({ onSignUpSuccess }: Props) => {
             size="large"
             className="form_submit--button"
             htmlType="submit"
+            style={{ width: "7rem" }}
           >
             Sign up
           </Button>

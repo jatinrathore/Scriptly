@@ -1,8 +1,4 @@
 /* Sign up */
-.container {
-  width: 50dvw;
-  padding: 10px 50px;
-}
 
 .heading {
   text-align: center;
@@ -17,14 +13,20 @@
   text-align: center;
   font-size: 1.2rem;
   font-weight: 500;
+  text-decoration: none;
 }
-
 .error-text {
   color: red;
   font-size: 14px;
   margin-left: 15px;
+  max-width: 20rem;
 }
 
 .form_submit--button {
   background-color: #52d3d8;
+}
+
+.box__input {
+  height: 3rem;
+  font-size: 1rem;
 }
